@@ -231,6 +231,14 @@
       .feature-card img { width: 100%; height: 92px; object-fit: cover; border-radius: 8px; margin-bottom: 18px; }
       .feature-card h3 { margin: 0; font-size: 20px; letter-spacing: 0; }
       .feature-card p { margin: 10px 0 0; color: #526173; font-size: 15px; }
+      .trust-band { background: #eaf2f8; color: var(--charcoal-soft); padding: 64px 0 72px; }
+      .trust-inner { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+      .trust-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 34px; }
+      .trust-card { min-height: 170px; border-radius: 8px; padding: 22px; background: rgba(255, 255, 255, 0.88); border: 1px solid rgba(15, 23, 42, 0.08); box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07); }
+      .trust-card h3 { margin: 0; font-size: 20px; letter-spacing: 0; }
+      .trust-card p { margin: 10px 0 0; color: #526173; font-size: 15px; }
+      .trust-note { margin: 22px 0 0; color: #334155; font-size: 15px; }
+      .trust-note strong { color: #0f172a; }
       .legal-strip { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--dark-line); }
       .legal-strip p { margin: 0; color: #64748b; font-size: 14px; }
       .legal-links { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -249,6 +257,7 @@
         .feature-head h2 { font-size: 34px; }
         .feature-head p { margin-top: 14px; }
         .feature-grid { grid-template-columns: 1fr; }
+        .trust-grid { grid-template-columns: 1fr; }
       }
       @media (max-width: 640px) {
         .topbar { padding: 8px; gap: 8px; }
@@ -329,6 +338,19 @@
               <article class="feature-card"><img src="https://raw.githubusercontent.com/bathalasindhur/alarmai-privacy-policy/main/assets/wallpaper-dusk.png" alt="Dusk visual theme" /><h3>Protect</h3><p>Keep optional cloud backup transparent with clear privacy and terms pages.</p></article>
             </div>
             <div class="legal-strip"><p>Alarm.Ai package: com.alarmai.alarm_ai</p><div class="legal-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:bsindhurdev@gmail.com">Support</a></div></div>
+          </div>
+        </section>
+        <section class="trust-band" id="google-data" aria-labelledby="google-data-title">
+          <div class="trust-inner">
+            <p class="section-kicker">Google user data</p>
+            <div class="feature-head"><h2 id="google-data-title">What Alarm.Ai does and how Google data is used.</h2><p>Alarm.Ai is an Android app for alarms, reminders, birthdays, routines, and focus tools. Google data is used only for optional features that you choose to enable.</p></div>
+            <div class="trust-grid">
+              <article class="trust-card"><h3>Google Sign-In</h3><p>Alarm.Ai uses Google Sign-In only to connect your Google account to optional app features. Your account identity helps the app know which Google account to use for backup or calendar access.</p></article>
+              <article class="trust-card"><h3>Google Drive backup</h3><p>If you turn on backup, Alarm.Ai stores your backup in your own Google Drive app data folder so your alarms, reminders, birthdays, and settings can be restored later. The backup is not published publicly and is not shared with the developer.</p></article>
+              <article class="trust-card"><h3>Google Calendar read-only access</h3><p>If you connect Google Calendar, Alarm.Ai reads upcoming calendar events only to show schedule context inside the app. Alarm.Ai does not create, edit, or delete calendar events.</p></article>
+              <article class="trust-card"><h3>Your control</h3><p>Google features are optional. You can choose not to sign in, disconnect your Google account, or revoke Google access at any time. Alarm.Ai does not sell Google user data or use it for advertising.</p></article>
+            </div>
+            <p class="trust-note"><strong>Need more detail?</strong> Review the <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>, or contact <a href="mailto:bsindhurdev@gmail.com">bsindhurdev@gmail.com</a>.</p>
           </div>
         </section>
       </main>
